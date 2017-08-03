@@ -1,0 +1,80 @@
+I, [2017-08-03T13:07:11.454572 #3692]  INFO -- Kitchen: -----> Starting Kitchen (v1.16.0)
+I, [2017-08-03T13:07:18.056436 #3692]  INFO -- Kitchen: -----> Creating <default-windows-2012r2>...
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: ------Exception-------
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Failed to complete #create action: [No such file or directory @ rb_sysopen - C:/Users/Administrator/.aws/mayuri_oregon_key.pem] on default-windows-2012r2
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: ----------------------
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:183:in `report_errors'
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:174:in `run_action'
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command/action.rb:36:in `block in call'
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command/action.rb:34:in `call'
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:53:in `perform'
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:187:in `block (2 levels) in <class:CLI>'
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-08-03T13:09:18.412111 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/bin/kitchen:13:in `<top (required)>'
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:275:in `load'
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:275:in `<main>'
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: ----End Backtrace-----
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: -Composite Exception--
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: Message: Failed to complete #create action: [No such file or directory @ rb_sysopen - C:/Users/Administrator/.aws/mayuri_oregon_key.pem] on default-windows-2012r2
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: ----------------------
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-resources-2.10.10/lib/aws-sdk-resources/services/ec2/instance.rb:11:in `initialize'
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-resources-2.10.10/lib/aws-sdk-resources/services/ec2/instance.rb:11:in `open'
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-resources-2.10.10/lib/aws-sdk-resources/services/ec2/instance.rb:11:in `decrypt_windows_password'
+E, [2017-08-03T13:09:18.413081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-ec2-1.3.2/lib/kitchen/driver/ec2.rb:479:in `fetch_windows_admin_password'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-ec2-1.3.2/lib/kitchen/driver/ec2.rb:221:in `create'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-08-03T13:09:18.414102 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: ----End Backtrace-----
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: ---Nested Exception---
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: Message: Failed to complete #create action: [No such file or directory @ rb_sysopen - C:/Users/Administrator/.aws/mayuri_oregon_key.pem]
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: ----------------------
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-resources-2.10.10/lib/aws-sdk-resources/services/ec2/instance.rb:11:in `initialize'
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-resources-2.10.10/lib/aws-sdk-resources/services/ec2/instance.rb:11:in `open'
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-resources-2.10.10/lib/aws-sdk-resources/services/ec2/instance.rb:11:in `decrypt_windows_password'
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-ec2-1.3.2/lib/kitchen/driver/ec2.rb:479:in `fetch_windows_admin_password'
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-ec2-1.3.2/lib/kitchen/driver/ec2.rb:221:in `create'
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-08-03T13:09:18.415081 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-08-03T13:09:18.416110 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-08-03T13:09:18.416110 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-08-03T13:09:18.416110 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-08-03T13:09:18.416110 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-08-03T13:09:18.416110 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-08-03T13:09:18.416110 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-08-03T13:09:18.416110 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-08-03T13:09:18.416110 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-08-03T13:09:18.416110 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-08-03T13:09:18.416110 #3692] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2017-08-03T13:09:18.416110 #3692] ERROR -- Kitchen: ----End Backtrace-----

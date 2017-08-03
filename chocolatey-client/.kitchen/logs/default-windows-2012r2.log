@@ -1,0 +1,65 @@
+I, [2017-08-03T13:07:18.056436 #3692]  INFO -- default-windows-2012r2: -----> Creating <default-windows-2012r2>...
+I, [2017-08-03T13:07:18.126456 #3692]  INFO -- default-windows-2012r2: Detected platform: windows version 2012rtm on x86_64. Instance Type: t2.micro. Default username: administrator (default).
+I, [2017-08-03T13:07:18.126456 #3692]  INFO -- default-windows-2012r2: If you are not using an account that qualifies under the AWS
+free-tier, you may be charged to run these suites. The charge
+should be minimal, but neither Test Kitchen nor its maintainers
+are responsible for your incurred costs.
+
+I, [2017-08-03T13:07:18.822444 #3692]  INFO -- default-windows-2012r2: Instance <i-08a8a77e9dfdc400a> requested.
+I, [2017-08-03T13:07:18.822444 #3692]  INFO -- default-windows-2012r2: Polling AWS for existence, attempt 0...
+I, [2017-08-03T13:07:18.935417 #3692]  INFO -- default-windows-2012r2: Attempting to tag the instance, 0 retries
+I, [2017-08-03T13:07:19.036424 #3692]  INFO -- default-windows-2012r2: EC2 instance <i-08a8a77e9dfdc400a> created.
+I, [2017-08-03T13:07:19.036424 #3692]  INFO -- default-windows-2012r2: Waited 0/300s for instance <i-08a8a77e9dfdc400a> volumes to be ready.
+I, [2017-08-03T13:07:24.178335 #3692]  INFO -- default-windows-2012r2: Waited 5/300s for instance <i-08a8a77e9dfdc400a> volumes to be ready.
+I, [2017-08-03T13:07:29.324225 #3692]  INFO -- default-windows-2012r2: Waited 10/300s for instance <i-08a8a77e9dfdc400a> volumes to be ready.
+I, [2017-08-03T13:07:29.688203 #3692]  INFO -- default-windows-2012r2: Waited 0/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:07:34.762127 #3692]  INFO -- default-windows-2012r2: Waited 5/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:07:39.862013 #3692]  INFO -- default-windows-2012r2: Waited 10/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:07:45.058929 #3692]  INFO -- default-windows-2012r2: Waited 15/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:07:50.233819 #3692]  INFO -- default-windows-2012r2: Waited 20/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:07:55.377738 #3692]  INFO -- default-windows-2012r2: Waited 25/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:08:00.556630 #3692]  INFO -- default-windows-2012r2: Waited 30/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:08:05.712537 #3692]  INFO -- default-windows-2012r2: Waited 35/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:08:10.866425 #3692]  INFO -- default-windows-2012r2: Waited 40/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:08:16.067328 #3692]  INFO -- default-windows-2012r2: Waited 45/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:08:21.212233 #3692]  INFO -- default-windows-2012r2: Waited 50/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:08:26.357128 #3692]  INFO -- default-windows-2012r2: Waited 55/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:08:31.505048 #3692]  INFO -- default-windows-2012r2: Waited 60/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:08:36.646925 #3692]  INFO -- default-windows-2012r2: Waited 65/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:08:41.779823 #3692]  INFO -- default-windows-2012r2: Waited 70/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:08:47.098714 #3692]  INFO -- default-windows-2012r2: Waited 75/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:08:52.250635 #3692]  INFO -- default-windows-2012r2: Waited 80/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:08:57.393517 #3692]  INFO -- default-windows-2012r2: Waited 85/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:09:02.537425 #3692]  INFO -- default-windows-2012r2: Waited 90/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:09:07.672308 #3692]  INFO -- default-windows-2012r2: Waited 95/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:09:12.825213 #3692]  INFO -- default-windows-2012r2: Waited 100/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:09:17.958116 #3692]  INFO -- default-windows-2012r2: Waited 105/300s for instance <i-08a8a77e9dfdc400a> to become ready.
+I, [2017-08-03T13:09:18.327114 #3692]  INFO -- default-windows-2012r2: Waited 0/300s for instance <i-08a8a77e9dfdc400a> to fetch windows admin password.
+E, [2017-08-03T13:09:18.407115 #3692] ERROR -- default-windows-2012r2: Create failed on instance <default-windows-2012r2>.
+E, [2017-08-03T13:09:18.407115 #3692] ERROR -- default-windows-2012r2: ------Exception-------
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: Class: Errno::ENOENT
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: Message: No such file or directory @ rb_sysopen - C:/Users/Administrator/.aws/mayuri_oregon_key.pem
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: ----------------------
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: ------Backtrace-------
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-resources-2.10.10/lib/aws-sdk-resources/services/ec2/instance.rb:11:in `initialize'
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-resources-2.10.10/lib/aws-sdk-resources/services/ec2/instance.rb:11:in `open'
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/aws-sdk-resources-2.10.10/lib/aws-sdk-resources/services/ec2/instance.rb:11:in `decrypt_windows_password'
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-ec2-1.3.2/lib/kitchen/driver/ec2.rb:479:in `fetch_windows_admin_password'
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/kitchen-ec2-1.3.2/lib/kitchen/driver/ec2.rb:221:in `create'
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-08-03T13:09:18.408068 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-08-03T13:09:18.409099 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-08-03T13:09:18.409099 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-08-03T13:09:18.409099 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-08-03T13:09:18.409099 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-08-03T13:09:18.409099 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-08-03T13:09:18.409099 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-08-03T13:09:18.409099 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-08-03T13:09:18.409099 #3692] ERROR -- default-windows-2012r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.4.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2017-08-03T13:09:18.409099 #3692] ERROR -- default-windows-2012r2: ----End Backtrace-----

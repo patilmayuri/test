@@ -1,0 +1,42 @@
+---
+driver:
+  name: ec2
+  region: us-west-2
+  subnet_id: subnet-00b14166
+  security_group_ids: ["sg-5401992e"]
+  aws_ssh_key_id: mayuri_oregon_key
+  iam_profile_name: s3accesstoec2
+  tags:
+    Owner: mayuri.patil
+    Environment: Testing
+    Project: USTC
+
+transport:
+  name: winrm
+  ssh_key: ~/.aws/mayuri_oregon_key.pem
+
+verifier:
+  name: inspec
+
+platforms:
+  # RHEL 6.8
+  - name: windows-2012r2
+    driver:
+      instance_type: t2.micro
+      # user_data: ./.user_data_linux.ps1
+      image_id: ami-a1c1ddd8
+      tags:
+        Name: dev-windows
+    transport:
+      username: Administrator
+
+suites:
+  - name: default
+    run_list:
+      - recipe[chocolatey-client::default
+    attributes:
+      STIG-RHEL-6:
+        users:
+          uid: '1234'
+          reset_password: 'rean@123'
+          admin_email: 'system.admin@gmail.com'
