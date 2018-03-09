@@ -37,18 +37,16 @@ node{
             catch(e)
             {
                 stage('Email_Notification_For_Failures') {
-                    notifyBuild("FAILED","${e}")
+                    print("FAILED","${e}")
                     step([$class: 'WsCleanup', cleanWhenFailure: true])
                 }
                 throw e
             }
-                notifyBuild(currentBuild.result,"NULL")
+                print(currentBuild.result,"NULL")
     }
 
 def sendEmail(toAddress, emailSubject, emailBody) {
-  mail to: toAddress,
-  subject: emailSubject,
-  body: emailBody
+  print "nothing..........."
 }
 
 def notifyBuild(String buildStatus = 'STARTED',String thiserr) {
@@ -87,7 +85,7 @@ def notifyBuild(String buildStatus = 'STARTED',String thiserr) {
         sh "set +x;sed -i 's/ //g' lastAuthor"  //fixing the email adddress
         def lines = readFile("lastAuthor")
         println "Email notifications will be send to : ${lines}"
-          
+          sendEmail("${lines}, ashish.modak@reancloud.com", "${subject}", "Details available at ${env.BUILD_URL}")
 }
         step([$class: 'WsCleanup', cleanWhenFailure: true])
 }
