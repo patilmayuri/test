@@ -28,7 +28,7 @@ node{
                 export JENKINS_TOKEN=xxxxx
                 export JENKINS_USERNAME=dmin
                 set -e
-                pip install python-jenkins
+                pip install cliff
               '''
             }
          }
@@ -37,55 +37,10 @@ node{
             catch(e)
             {
                 stage('Email_Notification_For_Failures') {
-                    print("FAILED","${e}")
+        
                     step([$class: 'WsCleanup', cleanWhenFailure: true])
                 }
                 throw e
             }
-                print(currentBuild.result,"NULL")
+              echo "testing ......"
     }
-
-def sendEmail(toAddress, emailSubject, emailBody) {
-  print "nothing..........."
-}
-
-def notifyBuild(String buildStatus = 'STARTED',String thiserr) {
-  buildStatus =  buildStatus ?: 'SUCCESSFUL'
-
-        def colorName = 'RED'
-        def colorCode = '#FF0000'
-
-  if (buildStatus == 'STARTED') {
-    color = 'YELLOW'
-    colorCode = '#FFFF00'
-  } else if (buildStatus == 'SUCCESSFUL') {
-    color = 'GREEN'
-    colorCode = '#00FF00'
-          step([$class: 'GitHubCommitStatusSetter',
-        contextSource: [$class: 'ManuallyEnteredCommitContextSource',
-        context: 'BUILD STATUS'],
-        statusResultSource: [$class: 'ConditionalStatusResultSource',
-        results: [[$class: 'AnyBuildResult',
-        message: 'SUCCESSFUL',
-        state: 'SUCCESS']]]])
-        echo "status set to ${buildStatus}."
-  } else if (buildStatus == 'FAILED') {
-    color = 'RED'
-    colorCode = '#FF0000'
-          step([$class: 'GitHubCommitStatusSetter',
-        contextSource: [$class: 'ManuallyEnteredCommitContextSource',
-        context: 'BUILD STATUS'],
-        statusResultSource: [$class: 'ConditionalStatusResultSource',
-        results: [[$class: 'AnyBuildResult',
-        message: 'FAILED',
-        state: '${buildStatus}']]]])
-        echo "status set to ${buildStatus}."
-        def subject = "${buildStatus}: Job '${job} [${build_number}]'"
-        sh "git log --after 1.days.ago|egrep -io '[a-z0-9\\-\\._@]++\\.[a-z0-9]{1,4}'|head -1 >lastAuthor"
-        sh "set +x;sed -i 's/ //g' lastAuthor"  //fixing the email adddress
-        def lines = readFile("lastAuthor")
-        println "Email notifications will be send to : ${lines}"
-          sendEmail("${lines}, ashish.modak@reancloud.com", "${subject}", "Details available at ${env.BUILD_URL}")
-}
-        step([$class: 'WsCleanup', cleanWhenFailure: true])
-}
