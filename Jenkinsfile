@@ -29,7 +29,9 @@ node{
                 export JENKINS_USERNAME=dmin
                 set +x
                 virtualenv my_project
-                
+                virtualenv -p /usr/bin/python2.7 my_project
+                export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
+                source my_project/bin/activate
                 pip install python-lambda
               '''
             }
