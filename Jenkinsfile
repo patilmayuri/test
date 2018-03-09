@@ -31,7 +31,7 @@ node{
               '''
             }
          }
-        }
+        
             catch(e)
             {
                 stage('Email_Notification_For_Failures') {
@@ -40,4 +40,5 @@ node{
                 }
                 throw e
             }
+ } 
 }
