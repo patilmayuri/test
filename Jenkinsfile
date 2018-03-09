@@ -28,7 +28,7 @@ node{
                 export JENKINS_TOKEN=xxxxx
                 export JENKINS_USERNAME=dmin
                 set +x
-                sudo pip install cliff
+                pip install cliff
               '''
             }
          }
