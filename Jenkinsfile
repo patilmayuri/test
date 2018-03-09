@@ -29,7 +29,7 @@ node{
                 export JENKINS_USERNAME=dmin
                 set +x
                 virtualenv my_project
-                source my_project/bin/activate
+                
                 pip install python-lambda
               '''
             }
