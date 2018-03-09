@@ -7,6 +7,7 @@ git_branch_name = branch_name.replaceAll("%2F","/")
 url_branch_name = git_branch_name.replaceAll("/","%252F")
 
 node{
+ withPythonEnv('python2.7') {  
         try
         {
             stage('Checkout') {
@@ -14,7 +15,7 @@ node{
             }
 
             stage('Test_Python_Code') {
-            withPythonEnv('python2.7') {  
+             
             echo "Running: Test_Python_Code"
             // supress echo
               sh '''set +x;
@@ -26,8 +27,7 @@ node{
                 export JENKINS_URL=http://35.161.44.53:8080
                 export JENKINS_TOKEN=xxxxx
                 export JENKINS_USERNAME=admin
-                pip install -r requirements.txt
-                lambda invoke -v
+                pip install python-lambda
               '''
             }
          }
