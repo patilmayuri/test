@@ -14,37 +14,26 @@ node{
             }
 
             stage('Test_Python_Code') {
-            withPythonEnv('python') {  
-            echo "Running: Test_Python_Code"
-            // supress echo 
-              sh '''
-               #!/bin/bash
-                export BOT_TOKEN=xxxxxx
-                export BOT_ID=xxxx
-                export REAN_DEPLOY_URL=https://deploynow.reancloud.com/DeployNow/rest
-                export REAN_DEPLOY_USERNAME=xxxxx
-                export REAN_DEPLOY_PASSWORD=xxxxx
-                export JENKINS_URL=http://35.161.44.53:8080
-                export JENKINS_TOKEN=xxxxx
-                export JENKINS_USERNAME=dmin
-                set +x
-                virtualenv my_project
-                virtualenv -p /usr/bin/python2.7 my_project
-                export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7
-                source my_project/bin/activate
-                pip install python-lambda
-              '''
-            }
-         }
-        }
-
-            catch(e)
-            {
-                stage('Email_Notification_For_Failures') {
-        
-                    step([$class: 'WsCleanup', cleanWhenFailure: true])
+            withPythonEnv('python') {
+            int exitCode = 0
+            try {
+              stage('Getting the dependencies') {
+                echo "\u001B[34m\u001B[1mInstalling the Dependencies\u001B[0m"
+                try {
+                  sh '''
+                        #!/bin/bash
+                        set -e
+                        pip install -r collect/src/requirements.txt
+                  '''
                 }
-                throw e
+                catch (Exception e) {
+                  println "\u001B[31mInstalling dependencies failed. Please fix the issues\u001B[0m"
+                  sh "exit 1"
+                }
+              }
+
             }
-              echo "testing ......"
-    }
+            }
+            }
+        }
+    }                   
