@@ -1,0 +1,31 @@
+region: us-west-2
+
+function_name: rean_rover_lambda_function
+handler: service.handler
+# role: lambda_basic_execution
+description: REAN DevOps Platform Bot
+runtime: python2.7
+
+# if access key and secret are left blank, boto will use the credentials
+# defined in the [default] section of ~/.aws/credentials.
+aws_access_key_id:
+aws_secret_access_key:
+
+# dist_directory: dist
+# timeout: 15
+# memory_size: 512
+#
+
+# Experimental Environment variables
+environment_variables:
+    BOT_TOKEN: xoxb-xxxxxxxxxxxxx-XXXXXXXXXXXXXXXXXXXX
+    BOT_ID: U6QGKQ5KP
+    REAN_DEPLOY_URL: https://deploynow.reancloud.com/DeployNow/rest
+    REAN_DEPLOY_USERNAME: xxxxx
+    REAN_DEPLOY_PASSWORD: xxxxx
+    JENKINS_URL: http://35.161.44.53:8080
+    JENKINS_TOKEN: xxxx
+    JENKINS_USERNAME: admin
+
+build:
+  source_directories: rean_jenkins, rean_deploy, cliff, stevedore 
