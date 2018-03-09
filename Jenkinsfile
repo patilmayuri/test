@@ -87,7 +87,7 @@ def notifyBuild(String buildStatus = 'STARTED',String thiserr) {
         sh "set +x;sed -i 's/ //g' lastAuthor"  //fixing the email adddress
         def lines = readFile("lastAuthor")
         println "Email notifications will be send to : ${lines}"
-          sendEmail("${lines}, ashish.modak@reancloud.com", "${subject}", "Details available at ${env.BUILD_URL}")
+          
 }
         step([$class: 'WsCleanup', cleanWhenFailure: true])
 }
