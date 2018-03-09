@@ -21,7 +21,7 @@ pipeline {
                   sh '''
                         #!/bin/bash
                         set -e
-                        pip install -r requirements.txt
+                        lambda build --use-requirements
                   '''
                 }
                 catch (Exception e) {
