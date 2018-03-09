@@ -1,6 +1,6 @@
 
 import logging
-import slack
+
 
 def handler(data, context):
     """Handle an incoming HTTP request, it could be from reanbot-router or from any bot. """
