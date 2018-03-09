@@ -19,7 +19,7 @@ pipeline {
                 echo "\u001B[34m\u001B[1mInstalling the Dependencies\u001B[0m"
                 try {
                   sh '''
-                        #!/bin/bash
+                        #!/bin/bash -l
                         set -e
                         pip install -r requirements.txt
                         lambda build --use-requirements
