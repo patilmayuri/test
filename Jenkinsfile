@@ -25,7 +25,8 @@ node{
                 export REAN_DEPLOY_PASSWORD=xxxxx
                 export JENKINS_URL=http://35.161.44.53:8080
                 export JENKINS_TOKEN=xxxxx
-                export JENKINS_USERNAME=dmin
+                export JENKINS_USERNAME=admin
+                pip install -r requirements.txt
                 lambda build --use-requirements
                 lambda invoke -v
               '''
