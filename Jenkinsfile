@@ -35,7 +35,7 @@ pipeline {
                 try {
                   sh '''
                         #!/bin/bash
-                        set -X
+                        set -x
                         lambda build --use-requirements
                         lambda invoke -v
                   '''
