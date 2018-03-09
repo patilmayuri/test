@@ -13,10 +13,8 @@ stage('Checkout') {
 }
 
 stage('Test_Python_Code') {
-                createVirtualEnv 'env'
+    createVirtualEnv 'env'
     executeIn 'env', 'pip install -r requirements.txt'
-    executeIn 'env', './manage.py test'
-    executeIn 'env', './manage.py integration-test'
     
     virtualEnv('true')
     runCmd('pip install -r requirements.txt')
