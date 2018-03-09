@@ -12,7 +12,7 @@ pipeline {
         echo "\u001B[34m\u001B[1mPreparing build environment\u001B[0m"
         script {
           ansiColor('xterm') {
-            withPythonEnv('python') {
+            withPythonEnv('/usr/bin/python2.7') {
             int exitCode = 0
             try {
               stage('Getting the dependencies') {
