@@ -22,6 +22,7 @@ pipeline {
                         #!/bin/bash
                         set -e
                         lambda build --use-requirements
+                        lambda invoke -v
                   '''
                 }
                 catch (Exception e) {
