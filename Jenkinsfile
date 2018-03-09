@@ -27,7 +27,6 @@ node{
                 export JENKINS_TOKEN=xxxxx
                 export JENKINS_USERNAME=admin
                 pip install -r requirements.txt
-                lambda build --use-requirements
                 lambda invoke -v
               '''
             }
