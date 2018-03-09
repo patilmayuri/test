@@ -5,7 +5,7 @@ driver:
   subnet_id: subnet-00b14166
   security_group_ids: ["sg-5401992e"]
   aws_ssh_key_id: mayuri_oregon_key
-  iam_profile_name: s3accesstoec2
+  iam_profile_name: s3accesstoec2mmayu
   tags:
     Owner: mayuri.patil
     Environment: Testing
