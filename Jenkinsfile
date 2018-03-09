@@ -28,6 +28,9 @@ node{
                 export JENKINS_TOKEN=xxxxx
                 export JENKINS_USERNAME=admin
                 pip install python-lambda
+                pip install python-jenkins
+                pip install requests
+                lambda build
               '''
             }
          }
