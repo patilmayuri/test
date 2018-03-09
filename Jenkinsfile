@@ -27,8 +27,8 @@ node{
                 export JENKINS_URL=http://35.161.44.53:8080
                 export JENKINS_TOKEN=xxxxx
                 export JENKINS_USERNAME=dmin
-                set -e
-                pip install cliff
+                set +x
+                sudo pip install cliff
               '''
             }
          }
