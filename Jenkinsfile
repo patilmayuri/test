@@ -28,8 +28,7 @@ node{
                 export JENKINS_TOKEN=xxxxx
                 export JENKINS_USERNAME=dmin
                 set +x
-                pip install --user
-                pip install cliff
+                virtualenv my_project
               '''
             }
          }
