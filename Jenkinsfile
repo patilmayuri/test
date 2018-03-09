@@ -18,7 +18,7 @@ pipeline {
               stage('Getting the dependencies') {
                 echo "\u001B[34m\u001B[1mInstalling the Dependencies\u001B[0m"
                 try {
-                  sh '''
+                  pysh '''
                         #!/bin/bash -l
                         set -e
                         pip install -r requirements.txt
@@ -33,7 +33,7 @@ pipeline {
               stage('Code Style Linting') {
                 echo "\u001B[34m\u001B[1mCode Style Linting\u001B[0m"
                 try {
-                  sh '''
+                  pysh '''
                         #!/bin/bash
                         set -x
                         lambda build --use-requirements
