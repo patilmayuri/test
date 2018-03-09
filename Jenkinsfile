@@ -14,6 +14,7 @@ node{
             }
 
             stage('Test_Python_Code') {
+            withPythonEnv('python2.7') {  
             echo "Running: Test_Python_Code"
             // supress echo
               sh '''set +x;
@@ -30,7 +31,7 @@ node{
               '''
             }
          }
-
+        }
             catch(e)
             {
                 stage('Email_Notification_For_Failures') {
