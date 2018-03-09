@@ -16,8 +16,7 @@ node{
             stage('Test_Python_Code') {
             withPythonEnv('python') {  
             echo "Running: Test_Python_Code"
-            // supress echo
-            
+            // supress echo 
               sh '''
                #!/bin/bash
                 export BOT_TOKEN=xxxxxx
@@ -29,7 +28,7 @@ node{
                 export JENKINS_TOKEN=xxxxx
                 export JENKINS_USERNAME=dmin
                 set -e
-                pip install -r requirements.txt
+                pip install python-jenkins
               '''
             }
          }
