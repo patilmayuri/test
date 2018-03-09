@@ -21,7 +21,7 @@ pipeline {
                   sh '''
                         #!/bin/bash
                         set -e
-                        pip install -r collect/src/requirements.txt
+                        pip install -r requirements.txt
                   '''
                 }
                 catch (Exception e) {
