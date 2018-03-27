@@ -1,0 +1,18 @@
+{
+    "token": "0MkuolbPtPqTrGmkSvcKGksI",
+    "team_id": "T5MBG2JKG",
+    "api_app_id": "A5LL7G91B",
+    "event": {
+        "type": "message",
+        "user": "U6QGKQ5KP",
+        "text": "<@U6QGKQ5KP> help",
+        "ts": "1496764428.496706",
+        "channel": "U6TUCL7CZ",
+        "event_ts": "1496764428.496706"
+    },
+    "type": "event_callback",
+    "authed_users": ["U5MBXN7M4"],
+    "event_id": "Ev5PDV5YUS",
+    "event_time": 1496764428
+}
+
