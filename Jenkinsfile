@@ -30,6 +30,7 @@ node{
                 pip install python-lambda
                 pip install python-jenkins
                 pip install requests
+                lambda build
               '''
             }
          }
