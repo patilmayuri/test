@@ -1,4 +1,1 @@
-python-lambda
-python-jenkins
-requests
-prettytable
+
