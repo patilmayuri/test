@@ -29,7 +29,9 @@ node{
                 export JENKINS_TOKEN=xxxxx
                 export JENKINS_USERNAME=dmin
                 set -e
-                pip install -r requirements.txt
+                pip install python-lambda
+                pip install python-jenkins
+                pip install requests
               '''
             }
          }
